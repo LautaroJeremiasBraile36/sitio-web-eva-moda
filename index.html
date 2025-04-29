@@ -23,19 +23,23 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
     <title>EvaCommerce</title>
   </head>
+
   <body>
     <div class="contenedor-todo">
       <header class="header">
         <h1 id="logo">Eleven Moda</h1>
-        <div class="container-nav-bar">
+
+        <!-- Botón de menú hamburguesa -->
+        <div class="hamburger-icon" id="hamburger-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="container-nav-bar" id="nav-menu">
           <nav class="nav-bar">
             <a href="./index.html" class="btn-nav-bar-select">Inicio</a>
-
             <a href="./categorias.html" class="btn-nav-bar">Categorias</a>
-
             <a href="./combos.html" class="btn-nav-bar">Combos</a>
             <a href="./carrito.html" class="btn-nav-bar">Carrito</a>
           </nav>
@@ -145,6 +149,19 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({ once: false });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: false });
+
+      // Script para el menú hamburguesa
+      const hamburger = document.getElementById("hamburger-icon");
+      const navMenu = document.getElementById("nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
     </script>
   </body>
 </html>

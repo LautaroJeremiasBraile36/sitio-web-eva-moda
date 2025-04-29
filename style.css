@@ -316,3 +316,83 @@ body {
     width: 380px;
   }
 }
+
+/* MEDIA QUERY PARA CELULARES PEQUEÑOS */
+@media (max-width: 576px) {
+  /* Ajustes generales */
+  .header {
+    padding: 0 8px;
+  }
+
+  .nav-bar {
+    display: none; /* Ocultamos los links normales en mobile */
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    z-index: 999;
+  }
+
+  .nav-bar.show {
+    display: flex;
+  }
+
+  .btn-nav-bar,
+  .btn-nav-bar-select {
+    font-size: 1rem;
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Botón menú hamburguesa */
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  /* Ajustes de textos grandes */
+  .titulo-main,
+  .prod-pijama,
+  .prod-blazers {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+  }
+
+  /* Ajustes cards */
+  .card-1 {
+    width: 90%;
+    max-width: 280px;
+    height: 340px;
+  }
+
+  /* Ajuste de padding general */
+  .main-principal section {
+    padding: 16px;
+  }
+
+  /* Botón WhatsApp más chico */
+  .btn-whatsapp {
+    padding: 10px;
+    font-size: 24px;
+  }
+
+  /* Footer más chico */
+  .footer {
+    height: 25vh;
+  }
+}
