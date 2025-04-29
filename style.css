@@ -230,6 +230,10 @@ body {
   background: linear-gradient(#ffffff, #ffffff) padding-box,
     linear-gradient(45deg, #ffd700, #ffa500, #ffff00, #ffd700) border-box;
   animation: brillo-borde 5s linear infinite;
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(45deg, #ffd700, #ffa500, #ffff00, #ffd700) border-box;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .card-1:hover {
